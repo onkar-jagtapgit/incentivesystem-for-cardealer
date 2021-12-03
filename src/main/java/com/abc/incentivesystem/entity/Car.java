@@ -1,0 +1,31 @@
+package com.abc.incentivesystem.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "car_tbl")
+public class Car {
+
+	@Id
+	@Column(name = "car_id")
+	private long carId;
+
+	@Column(name = "brand")
+	private String brand;
+
+	@Column(name = "model")
+	private String model;
+
+	@Column(name = "year_of_mfg")
+	private String yearOfManufaturing;
+
+	@Column(name = "registration_no")
+	private String registrationNo;
+	
+	@OneToOne 
+	private Booking booking;
+}
