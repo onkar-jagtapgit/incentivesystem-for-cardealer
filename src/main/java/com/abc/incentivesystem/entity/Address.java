@@ -27,4 +27,44 @@ public class Address {
 	@ManyToOne
 	@JoinColumn(name="customer_id")
 	private Customer customer;
+
+	public String getDoorNo() {
+		return doorNo;
+	}
+
+	public void setDoorNo(String doorNo) {
+		this.doorNo = doorNo;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(String state) {
+		this.state = state;
+	}
+
+	public int getPincode() {
+		return pincode;
+	}
+
+	public void setPincode(int pincode) {
+		this.pincode = pincode;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
 }

@@ -31,4 +31,52 @@ public class Customer {
 	
 	@OneToOne(mappedBy = "customer")
 	private Booking booking;
+
+	public String getCustomerId() {
+		return customerId;
+	}
+
+	public void setCustomerId(String customerId) {
+		this.customerId = customerId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getContactNo() {
+		return contactNo;
+	}
+
+	public void setContactNo(String contactNo) {
+		this.contactNo = contactNo;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public List<Address> getAdresses() {
+		return adresses;
+	}
+
+	public void setAdresses(List<Address> adresses) {
+		this.adresses = adresses;
+	}
+
+	public Booking getBooking() {
+		return booking;
+	}
+
+	public void setBooking(Booking booking) {
+		this.booking = booking;
+	}
 }

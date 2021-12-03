@@ -13,4 +13,12 @@ public class Incentive {
 	@Id
 	@Column(name="no_of_sales")
 	private int noOfSales;
+
+	public int getNoOfSales() {
+		return noOfSales;
+	}
+
+	public void setNoOfSales(int noOfSales) {
+		this.noOfSales = noOfSales;
+	}
 }

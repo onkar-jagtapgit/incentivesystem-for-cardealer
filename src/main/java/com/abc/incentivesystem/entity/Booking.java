@@ -28,4 +28,44 @@ public class Booking {
 
 	@OneToOne
 	private Incentive incentive;
+
+	public int getBookingId() {
+		return bookingId;
+	}
+
+	public void setBookingId(int bookingId) {
+		this.bookingId = bookingId;
+	}
+
+	public LocalDate getBookingDate() {
+		return bookingDate;
+	}
+
+	public void setBookingDate(LocalDate bookingDate) {
+		this.bookingDate = bookingDate;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Car getCar() {
+		return car;
+	}
+
+	public void setCar(Car car) {
+		this.car = car;
+	}
+
+	public Incentive getIncentive() {
+		return incentive;
+	}
+
+	public void setIncentive(Incentive incentive) {
+		this.incentive = incentive;
+	}
 }

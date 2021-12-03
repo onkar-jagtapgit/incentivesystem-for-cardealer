@@ -28,4 +28,52 @@ public class Car {
 	
 	@OneToOne 
 	private Booking booking;
+
+	public long getCarId() {
+		return carId;
+	}
+
+	public void setCarId(long carId) {
+		this.carId = carId;
+	}
+
+	public String getBrand() {
+		return brand;
+	}
+
+	public void setBrand(String brand) {
+		this.brand = brand;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public String getYearOfManufaturing() {
+		return yearOfManufaturing;
+	}
+
+	public void setYearOfManufaturing(String yearOfManufaturing) {
+		this.yearOfManufaturing = yearOfManufaturing;
+	}
+
+	public String getRegistrationNo() {
+		return registrationNo;
+	}
+
+	public void setRegistrationNo(String registrationNo) {
+		this.registrationNo = registrationNo;
+	}
+
+	public Booking getBooking() {
+		return booking;
+	}
+
+	public void setBooking(Booking booking) {
+		this.booking = booking;
+	}
 }
