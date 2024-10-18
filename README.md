@@ -1,4 +1,5 @@
-Incentive System for Car Dealer
+### Incentive System for Car Dealer
+
 A Spring Boot application designed to manage user data with MySQL database integration, offering full CRUD operations via REST APIs.
 Example:
 - RESTful API with CRUD operations
